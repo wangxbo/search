@@ -72,7 +72,7 @@ public class Product {
 	}
 
 	public Map toMap() {
-		HashMap<String,Object> map = new HashMap<>();
+		HashMap<String,Object> map = new HashMap();
 		map.put("name", name);
 		map.put("category", category);
 		map.put("code", code);

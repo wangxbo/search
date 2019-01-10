@@ -47,11 +47,11 @@ public class TestLucene {
 		/*****************索引的删除和更新***************/
 		//索引删除，删除id=51173的数据，通过关键字 “鞭" 可以查询到一条id是51173的数据
 		//删除后就搜不到了
-		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_47, analyzer);
+		/*IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_47, analyzer);
 		IndexWriter indexWriter = new IndexWriter(index, config);
 		indexWriter.deleteDocuments(new Term("id", "51173"));
 		indexWriter.commit();
-		indexWriter.close();
+		indexWriter.close();*/
 
 		/*还可以按照如下方法来删除索引，API 很明显，就不做代码示例了
 
@@ -121,7 +121,7 @@ public class TestLucene {
 		System.out.println("查询到的总条数\t"+topDocs.totalHits);
 		ScoreDoc [] alllScores = topDocs.scoreDocs;
 
-		List<ScoreDoc> hitScores = new ArrayList<>();
+		List<ScoreDoc> hitScores = new ArrayList();
 
 		int start = (pageNow -1)*pageSize ;
 		int end = pageSize*pageNow;

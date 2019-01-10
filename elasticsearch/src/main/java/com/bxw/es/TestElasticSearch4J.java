@@ -223,7 +223,7 @@ public class TestElasticSearch4J {
 	 * @throws IOException
 	 */
 	private static void addDocument(Product product) throws IOException {
-		Map<String, Object> jsonMap = new HashMap<>();
+		Map<String, Object> jsonMap = new HashMap();
 		jsonMap.put("name", product.getName());
 		IndexRequest indexRequest = new IndexRequest(indexName, "product", String.valueOf(product.getId()))
 				.source(jsonMap);

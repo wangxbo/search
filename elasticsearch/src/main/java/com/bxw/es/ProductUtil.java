@@ -24,7 +24,7 @@ public class ProductUtil {
 	public static List<Product> file2list(String fileName) throws IOException {
 		File f = new File(fileName);
 		List<String> lines = FileUtils.readLines(f,"UTF-8");
-		List<Product> products = new ArrayList<>();
+		List<Product> products = new ArrayList();
 		for (String line : lines) {
 			Product p = line2product(line);
 			products.add(p);

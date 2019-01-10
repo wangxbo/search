@@ -23,7 +23,7 @@ public class TestSolr4j {
 		//SolrUtil.queryHighlight("place:山东济南");
 
 		//修改、删除索引
-		//updateOrDelete();
+		updateOrDelete();
 
 	}
 

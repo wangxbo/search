@@ -32,7 +32,7 @@ public class TestHighlighter {
         IKAnalyzer analyzer = new IKAnalyzer();
 
         // 2. 索引
-        List<String> productNames = new ArrayList<>();
+        List<String> productNames = new ArrayList();
         productNames.add("飞利浦led灯泡e27螺口暖白球泡灯家用照明超亮节能灯泡转色温灯泡");
         productNames.add("飞利浦led灯泡e14螺口蜡烛灯泡3W尖泡拉尾节能灯泡暖黄光源Lamp");
         productNames.add("雷士照明 LED灯泡 e27大螺口节能灯3W球泡灯 Lamp led节能灯泡");
